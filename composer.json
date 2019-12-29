@@ -64,7 +64,8 @@
         ],
         "post-install-cmd": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@php artisan key:generate --ansi"
+            "@php artisan key:generate --ansi",
+            "@php artisan jwt:secret"
         ]
     }
 }
