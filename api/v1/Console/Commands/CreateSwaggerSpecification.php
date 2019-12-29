@@ -39,7 +39,7 @@ class CreateSwaggerSpecification extends Command
     {
         $process = new Process(
             [
-                'vendor/bin/openapi!',
+                'vendor/bin/openapi',
                 '--output', 'public/swagger.json',
                 'api/v1/Http/Controllers',
                 'api/v1/resources',
